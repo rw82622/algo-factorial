@@ -1,2 +1,9 @@
-exports.factorial = function(num) {
+const factorial = function (num) {
+  let sum = num;
+  for (let i = num; i > 1; i--) {
+    sum *= i - 1;
+  }
+  return sum;
 };
+
+console.log(factorial(5));
