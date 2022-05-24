@@ -1,7 +1,6 @@
 exports.factorial = function (num) {
-  let sum = num;
-  for (let i = num; i > 1; i--) {
-    sum *= i - 1;
+  if (num == 1) {
+    return 1;
   }
-  return sum;
+  return num * this.factorial(num - 1);
 };
