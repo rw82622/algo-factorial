@@ -1,2 +1,2 @@
 def factorial(num):
-	# your code here
+	return 1 if num == 1 else num * factorial(num -1)
